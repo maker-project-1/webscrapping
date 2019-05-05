@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* -----------------------------------------------------
+	smart device Header
+----------------------------------------------------- */
+
+
+body{margin:0;padding:0;}/*bodyの基本余白に関してはサイトの設定に依存します。問題無ければこれをそのまま適用してください。*/
+
+
+/*  Header
+--------------------------------------- */
+#header{
+margin:0;
+padding:0;
+line-height:1.6;
+height:24px;
+min-height:24px;
+font-size:11px;
+color:#828282;
+background:none;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ededed), color-stop(0.00, #fefefe));
+background:-webkit-linear-gradient(top, #fefefe 0%, #ededed 100%);
+}
+
+
+
+#header h1{
+margin:0;
+padding:0;
+line-height:1.3;
+font-size:100%;
+}
+
+
+#header ul,
+#header ol{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+#header img{
+margin:0;
+padding:0;
+border:0;
+vertical-align:bottom;
+}
+
+
+#header input,
+#header select{
+margin:0;
+padding:0;
+vertical-align:middle;
+}
+
+#header label{
+margin:0;
+padding:0;
+cursor:pointer;
+}
+
+#header p{
+margin:0;
+padding:0;
+}
+
+#header a:link,
+#header a:visited,
+#header a:focus,
+#header a:hover,
+#header a:active{
+color:#828282;
+text-decoration:none;
+}
+
+
+
+#header .inner{
+width:320px;
+margin:0 auto;
+}
+
+#header #site-logo{
+float:left;
+line-height:0;
+font-size:0;
+}
+
+#header #site-search ul{
+float:left;
+width:90px;
+margin:3px 0 0 17px;
+line-height:1.0;
+font-size:68%;
+border:1px solid #b5b5b5;
+border-radius: 3px;
+text-align:center;
+}
+
+#header #site-search ul li{
+float:left;
+}
+
+#header #site-search ul li a{
+display:block;
+width:45px;
+padding:3px 0;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #ededed), color-stop(0.00, #fefefe));
+background:-webkit-linear-gradient(top, #fefefe 0%, #ededed 100%);
+}
+
+#header #site-search ul li.web a{
+border-radius: 3px 0 0 3px;
+font-size:68%;
+}
+#header #site-search ul li.item a{
+border-radius: 0 3px 3px 0;
+font-size:68%;
+}
+
+#header #site-search ul li a.active{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #c9c9c9), color-stop(0.00, #dcdcdc));
+background:-webkit-linear-gradient(top, #dcdcdc 0%, #c9c9c9 100%);
+}
+
+#header #site-search p{
+float:left;
+margin:3px 0 0 5px;
+border:1px solid #b5b5b5;
+border-radius: 3px;
+background:url(../../img/square/smart/com_ic_001.png) no-repeat 4px 4px;
+}
+
+#header #site-search p a{
+display:block;
+width:70px;
+padding:3px 0 3px 16px;
+line-height:1.0;
+font-size:68%;
+}
+
+
+/*  Float Clearing
+--------------------------------------- */
+#header:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
