@@ -1,0 +1,18 @@
+package main
+
+import "os"
+
+func fileExists(filename string) bool {
+	info, err := os.Stat(filename)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return !info.IsDir()
+}
+
+func getFile(file string) string {
+	if fileExists(PathExcel+file+Extension) == true {
+		return PathExcel + file + Extension
+	}
+	return ""
+}

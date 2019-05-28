@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <h1>MakerProject</h1>
+
+    <select id="site" onchange="redirect(this)">
+        <option selected value="None">Choose Your Site</option>
+        <option value="raw_ctg_page_extracts">test1</option>
+        <option value="31Dover">test2</option>
+    </select>
+
+    <script>
+        function redirect(event) {
+            var site = event.value;
+
+            if (site == "None")
+                return;
+            window.location.href = 'http://localhost:1234/'+site;
+        }
+        </script>
+</html>
