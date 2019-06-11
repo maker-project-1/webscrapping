@@ -13,6 +13,9 @@ func httpRequest(w http.ResponseWriter, r *http.Request) {
 
 		file := getFile(url[1])
 
+		fmt.Printf(file)
+		fmt.Printf("\n")
+
 		if file != "" {
 			fmt.Printf("File Found\n")
 			fileFound(w, file)

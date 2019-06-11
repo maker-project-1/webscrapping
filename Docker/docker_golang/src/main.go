@@ -10,10 +10,10 @@ import (
 
 const (
 	// PathExcel = "/ressource/" => where the excel files are stock"
-	PathExcel = "/ressource/"
+	PathExcel = "/cache/w_9/"
 
 	// Extension = ".xlsx => format of the files"
-	Extension = ".xlsx"
+	Extension = "/raw_csv/raw_ctg_page_extracts.xlsx"
 )
 
 func main() {

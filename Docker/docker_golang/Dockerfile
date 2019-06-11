@@ -4,7 +4,6 @@ RUN mkdir /app
 RUN mkdir /ressource
 
 ADD . /app/
-ADD ./raw_ctg_page_extracts.xlsx /ressource/
 
 WORKDIR /app
 
