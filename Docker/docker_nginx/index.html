@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 
 <html>
-    <h1>MakerProject</h1>
+    <title>MakerProject</title>
 
-    <select id="site" onchange="redirect(this)">
-        <option selected value="None">Choose Your Site</option>
-        <option value="leclercdrive">test1</option>
-        <option value="31Dover">test2</option>
-        <option value="raw_champgane_price_ctg">test3</option>
-    </select>
+    <style>
+        .textarea_webscrapping {
+            background-color: #3CBC8D;
+            color: white;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: 300px;
+        }
+
+        .textarea_projet {
+            background-color: rgba(216, 65, 19, 0.698);
+            color: white;
+            font-size: 20px;
+        }
+
+        a {
+            outline: none;
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+
+        a:link {
+          color: #265301;
+        }
+
+        a:visited {
+          color: #437A16;
+        }
+
+        a:focus {
+          border-bottom: 1px solid;
+          background: #BAE498;
+        }
+
+        a:hover {
+          border-bottom: 1px solid;
+          background: #CDFEAA;
+        }
+
+        a:active {
+          background: #265301;
+          color: #CDFEAA;
+        }
+
+        .custom-dropdown--large {
+            font-size: 1.5em;
+        }
+
+        .custom-dropdown--small {
+            font-size: .7em;
+        }
+
+        .custom-dropdown__select{
+            font-size: inherit;
+            padding: .5em;
+            margin-left: 42%;
+        }
+
+    </style>
+
+    <body style="overflow-x:hidden">
+        <h1 align="center">MakerProject</h1>
+
+        <img src="https://www.castor-webs.com/wp-content/uploads/2017/06/Data-Center-castor-webs-serveur-d%C3%A9di%C3%A9.jpg">
+
+            <h3 align="center">Sur ce site, nous allons vous pr&eacute;senter notre MakerProject</h3>
+
+        <textarea cols="50" rows="10" disabled="true" class="textarea_webscrapping">
+                  WebScrapping
+
+Le webscrapping est une technique permettant l'extraction de donn&eacute;e d'un site.
+
+Gr&acirc;ce au scrapping, on peut obtenir des fichiers structur&eacute;s qui peuvent &ecirc;tre utilis&eacute; a des fins commerciales
+        </textarea>
+
+        <textarea cols="50" rows="10" disabled="true" class="textarea_projet">
+                  Notre Projet
+
+Nous avons donc cr&eacute;e des codes permettant de r&eacute;colter des donn&eacute;es sur des sites e-commerce.
+
+Avec les donn&eacute;es r&eacute;colt&eacute;es, nous pouvons comparer les prix entre les sites.
+        </textarea>
+
+        <br><br><br><br><br>
+        
+        <p style="margin-left: 100px;">
+            Voici un exemple de site ou nous avons ex&eacute;cut&eacute; notre code: 
+            <a href="https://www.leclercdrive.fr">LeclercDrive</a>
+        </p>
+        <br><br><br><br><br>
+
+            <select id="site" onchange="redirect(this)" class="custom-dropdown__select custom-dropdown">
+                <option selected value="None">--Choose Your Site--</option>
+                <option value="leclercdrive">LeclercDrive</option>
+                <option value="31Dover">test2</option>
+                <option value="raw_champgane_price_ctg">test3</option>
+            </select>
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+    </body>
 
     <script>
         function redirect(event) {
